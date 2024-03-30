@@ -9,6 +9,42 @@
   <body>
     <nav class="navbar">
       <div class="container">
+        <div class="burger-icon" onclick="toggleMenu()">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 7H19"
+              stroke="#F8F8F8"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+            <path
+              d="M5 12H19"
+              stroke="#F8F8F8"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+            <path
+              d="M5 17H19"
+              stroke="#F8F8F8"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+          </svg>
+        </div>
+        <div class="menu" id="menu">
+          <a href="products.html" class="menu-btn">Продукція</a>
+          <a href="about.html" class="menu-btn">Про нас</a>
+          <a href="delivary.html" class="menu-btn">Оплата та Доставка</a>
+          <a href="#" class="menu-btn">Контакти</a>
+          <a href="#" class="menu-btn">Галерея</a>
+        </div>
+
         <ul class="nav-menu">
           <li>
             <a class="navbtn" href="products.html">Продукція</a>
@@ -69,43 +105,42 @@
           <li>
             <a class="navbtn" href="#"> Контакти </a>
           </li>
-          <li>
-            <a href="#">
-              <svg
-                class="icon-bag"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 8L8 7C8 4.79086 9.79086 3 12 3V3C14.2091 3 16 4.79086 16 7L16 8"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M15 14V12"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M9 14V12"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M4 12C4 10.1144 4 9.17157 4.58579 8.58579C5.17157 8 6.11438 8 8 8H16C17.8856 8 18.8284 8 19.4142 8.58579C20 9.17157 20 10.1144 20 12V13C20 16.7712 20 18.6569 18.8284 19.8284C17.6569 21 15.7712 21 12 21V21C8.22876 21 6.34315 21 5.17157 19.8284C4 18.6569 4 16.7712 4 13V12Z"
-                  stroke="white"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
-          </li>
+          <li></li>
         </ul>
+        <a href="#">
+          <svg
+            class="icon-bag"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 8L8 7C8 4.79086 9.79086 3 12 3V3C14.2091 3 16 4.79086 16 7L16 8"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M15 14V12"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M9 14V12"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12C4 10.1144 4 9.17157 4.58579 8.58579C5.17157 8 6.11438 8 8 8H16C17.8856 8 18.8284 8 19.4142 8.58579C20 9.17157 20 10.1144 20 12V13C20 16.7712 20 18.6569 18.8284 19.8284C17.6569 21 15.7712 21 12 21V21C8.22876 21 6.34315 21 5.17157 19.8284C4 18.6569 4 16.7712 4 13V12Z"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
       </div>
     </nav>
     <!-- Hero -->
@@ -114,8 +149,8 @@
         <div class="hero-content">
           <h1 class="hero-heading">СТВОРІТЬ ЖИТТЄВИЙ<br />ПРОСТІР МРІЇ</h1>
           <p class="hero-text">
-            Перетворіть подвір'я з нашою преміальною бруківкою.<br />
-            Кожен крок наближає до природи
+            Перетворіть подвір'я з нашою преміальною бруківкою. Кожен крок
+            наближає до природи
           </p>
           <div class="hero-buttons">
             <a href="products.html" class="btn">КАТАЛОГ</a>
@@ -127,19 +162,19 @@
     <section class="product">
       <div class="container">
         <h2 class="product__title">УЖЕ В ПРОДАЖУ</h2>
-        <div class="product-container" id="productContainer">
+        <div class="product-container">
           <div class="product-card">
-            <img src="images/Frame 329.png" alt="" class="image-card" />
+            <img src="images/Frame 329.webp" alt="" class="image-card" />
             <p class="title-card">Широко-форматна</p>
             <p class="description-card">Тратуарні плити</p>
           </div>
           <div class="product-card">
-            <img src="images/Frame 329-1.png" alt="" class="image-card" />
+            <img src="images/Frame 329-1.webp" alt="" class="image-card" />
             <p class="title-card">Широко-форматна</p>
             <p class="description-card">Тратуарні плити</p>
           </div>
           <div class="product-card">
-            <img src="images/Frame 329-2.png" alt="" class="image-card" />
+            <img src="images/Frame 329-2.webp" alt="" class="image-card" />
             <p class="title-card">Широко-форматна</p>
             <p class="description-card">Тратуарні плити</p>
           </div>
@@ -154,19 +189,19 @@
       <div class="container">
         <div class="textcontent">
           <h2 class="about-title">
-            Будуємо Краще Майбутнє: Наша <br />Філософія
+            БУДУЄМО КРАЩЕ МАЙБУТНЄ: НАША <br />ФІЛОСОФІЯ
           </h2>
           <div class="product-button">
             <a href="about.html" class="btn">ПРО НАС</a>
           </div>
         </div>
-        <img src="images/Image-5.png" alt="about us" />
+        <img src="images/Image-5.webp" alt="about us" />
       </div>
     </section>
     <!-- Discount -->
     <section class="discount">
       <div class="container">
-        <img class="img-discount" src="images/Image-4.png" alt="discount" />
+        <img class="img-discount" src="images/Image-4.webp" alt="discount" />
         <div class="textcontent">
           <h2 class="discount-title">СИСТЕМА ЗНИЖОК,<br />СТВОРЕНА ДЛЯ ВАС</h2>
           <a href="#" class="btn">ДІЗНАТИСЬ БІЛЬШЕ</a>
@@ -178,8 +213,8 @@
       <div class="container">
         <div class="design-content">
           <h1 class="design-heading">
-            Перетворення Вашого Подвір'я<br />
-            в Мистецтво
+            ПЕРЕТВОРЕННЯ ВАШОГО ПОДВІР`Я<br />
+            В МИСТЕЦТВО
           </h1>
           <p class="design-text">
             Наша команда експертів готова втілити вашу мрію про ідеальне
@@ -190,7 +225,7 @@
             вами на кожному етапі, щоб створити чудовий простір
           </p>
           <div class="design-buttons">
-            <a href="#" class="btn">КАТАЛОГ</a>
+            <a href="#" class="btn">БІЛЬШЕ</a>
           </div>
         </div>
       </div>
@@ -200,13 +235,13 @@
       <div class="container">
         <h2 class="gallery__title">ПРИКЛАДИ НАШИХ РОБІТ</h2>
         <div class="gallery__images">
-          <img src="images/Image.png" alt="1" />
-          <img src="images/Image-1.png" alt="2" />
+          <img src="images/Image.webp" alt="1" class="img-g1" />
+          <img src="images/Image-1.webp" alt="2" class="img-g1" />
 
-          <img src="images/Image-3.png" alt="3" />
-          <img src="images/Image-2.png" alt="4" />
+          <img src="images/Image-3.webp" alt="3" class="img-g" />
+          <img src="images/Image-2.webp" alt="4" class="img-g" />
         </div>
-        <a href="#" class="btn">КАТАЛОГ</a>
+        <a href="#" class="btn">БІЛЬШЕ</a>
       </div>
     </section>
     <!-- faq -->
@@ -288,7 +323,46 @@
           </p>
           <div class="form-buttons">
             <a href="#" class="btn-black">ПРАЙС ЛИСТ</a>
-            <a href="#" class="btn-black-outlined">ЗВЯЗОК</a>
+            <a href="#" class="btn-black-outlined" id="open-popup">ЗВЯЗОК</a>
+            <div class="popup" id="popup">
+              <div class="popup-content">
+                <svg
+                  class="close"
+                  onclick="closePopup()"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30 10L10 30"
+                    stroke="#33363F"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 10L30 30"
+                    stroke="#33363F"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <form class="contact-form">
+                  <h2 class="title">Заповність форму</h2>
+                  <input type="text" placeholder="Ваше Ім'я*" required />
+                  <input
+                    type="tel"
+                    placeholder="Ваш номер телефону*"
+                    required
+                  />
+                  <textarea placeholder="Ваше повідомлення"></textarea>
+                  <button type="submit">НАДІСЛАТИ</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -406,4 +480,5 @@
       </div>
     </footer>
   </body>
+  <script src="scripts.js"></script>
 </html>

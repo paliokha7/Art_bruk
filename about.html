@@ -9,6 +9,42 @@
   <body>
     <nav class="navbar">
       <div class="container">
+        <div class="burger-icon" onclick="toggleMenu()">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 7H19"
+              stroke="#F8F8F8"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+            <path
+              d="M5 12H19"
+              stroke="#F8F8F8"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+            <path
+              d="M5 17H19"
+              stroke="#F8F8F8"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+          </svg>
+        </div>
+        <div class="menu" id="menu">
+          <a href="products.html" class="menu-btn">Продукція</a>
+          <a href="about.html" class="menu-btn">Про нас</a>
+          <a href="delivary.html" class="menu-btn">Оплата та Доставка</a>
+          <a href="#" class="menu-btn">Контакти</a>
+          <a href="#" class="menu-btn">Галерея</a>
+        </div>
+
         <ul class="nav-menu">
           <li>
             <a class="navbtn" href="products.html">Продукція</a>
@@ -69,43 +105,42 @@
           <li>
             <a class="navbtn" href="#"> Контакти </a>
           </li>
-          <li>
-            <a href="#">
-              <svg
-                class="icon-bag"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 8L8 7C8 4.79086 9.79086 3 12 3V3C14.2091 3 16 4.79086 16 7L16 8"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M15 14V12"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M9 14V12"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M4 12C4 10.1144 4 9.17157 4.58579 8.58579C5.17157 8 6.11438 8 8 8H16C17.8856 8 18.8284 8 19.4142 8.58579C20 9.17157 20 10.1144 20 12V13C20 16.7712 20 18.6569 18.8284 19.8284C17.6569 21 15.7712 21 12 21V21C8.22876 21 6.34315 21 5.17157 19.8284C4 18.6569 4 16.7712 4 13V12Z"
-                  stroke="white"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
-          </li>
+          <li></li>
         </ul>
+        <a href="#">
+          <svg
+            class="icon-bag"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 8L8 7C8 4.79086 9.79086 3 12 3V3C14.2091 3 16 4.79086 16 7L16 8"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M15 14V12"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M9 14V12"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12C4 10.1144 4 9.17157 4.58579 8.58579C5.17157 8 6.11438 8 8 8H16C17.8856 8 18.8284 8 19.4142 8.58579C20 9.17157 20 10.1144 20 12V13C20 16.7712 20 18.6569 18.8284 19.8284C17.6569 21 15.7712 21 12 21V21C8.22876 21 6.34315 21 5.17157 19.8284C4 18.6569 4 16.7712 4 13V12Z"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
       </div>
     </nav>
 
@@ -123,13 +158,13 @@
             та виробів, виготовлених за допомогою сучасного вібропресування
           </p>
         </div>
-        <img class="img-discount" src="images/Logoabout.png" alt="discount" />
+        <img src="images/Logoabout.png" alt="discount" />
       </div>
     </section>
 
     <section class="quality">
       <div class="container">
-        <img src="images/block1.png" alt="about us" />
+        <img src="images/block1.webp" alt="about us" />
         <div class="text-content">
           <h2>ЯКІСТЬ</h2>
 
@@ -154,13 +189,13 @@
             її стійкість до різних видів навантажень.
           </p>
         </div>
-        <img src="images/block1.png" alt="about us" />
+        <img src="images/main.webp" alt="about us" />
       </div>
     </section>
 
     <section class="years">
       <div class="container">
-        <img src="images/block.png" alt="about us" />
+        <img src="images/block.webp" alt="about us" />
         <div class="text-content">
           <h2>
             ДОВІРА ПОНАД<br />
@@ -189,7 +224,46 @@
           </p>
           <div class="form-buttons">
             <a href="#" class="btn-black">ПРАЙС ЛИСТ</a>
-            <a href="#" class="btn-black-outlined">ЗВЯЗОК</a>
+            <a href="#" class="btn-black-outlined" id="open-popup">ЗВЯЗОК</a>
+            <div class="popup" id="popup">
+              <div class="popup-content">
+                <svg
+                  class="close"
+                  onclick="closePopup()"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30 10L10 30"
+                    stroke="#33363F"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 10L30 30"
+                    stroke="#33363F"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <form class="contact-form">
+                  <h2 class="title">Заповність форму</h2>
+                  <input type="text" placeholder="Ваше Ім'я*" required />
+                  <input
+                    type="tel"
+                    placeholder="Ваш номер телефону*"
+                    required
+                  />
+                  <textarea placeholder="Ваше повідомлення"></textarea>
+                  <button type="submit">НАДІСЛАТИ</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -307,4 +381,5 @@
       </div>
     </footer>
   </body>
+  <script src="scripts.js"></script>
 </html>
